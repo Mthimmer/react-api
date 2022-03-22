@@ -1,0 +1,15 @@
+.tool {
+  div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    padding: 23px 30px 20px 30px;
+    width: 200px;
+  }
+  button {
+    @include buttonStyle();
+  }
+}

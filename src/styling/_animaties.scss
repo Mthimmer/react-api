@@ -1,0 +1,79 @@
+// Animation header
+.duoWrapper.reveal {
+  position: relative;
+  transition: 1s all ease;
+
+  .duo1 {
+    transition: 1s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .duo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+.duoWrapper.reveal.active {
+  @media screen and (min-width: 760px) {
+    transition: 1s all ease;
+    padding: 0% 5% 0% 5%;
+    .duo1 {
+      transition: 1s all ease;
+      margin: 0em 5em 0em 0em;
+    }
+  }
+}
+
+// Animation imageWrapper
+.imageWrapper.reveal {
+  position: relative;
+  transition: 1s all ease;
+  div:nth-child(2) img {
+    transition: 1s all ease;
+    height: 200px;
+  }
+  div:nth-child(4) img {
+    transition: 1s all ease;
+    height: 200px;
+  }
+}
+.imageWrapper.reveal.active {
+  transition: 1s all ease;
+
+  div:nth-child(2) img {
+    transition: 1s all ease;
+    height: 600px;
+  }
+  div:nth-child(4) img {
+    transition: 1s all ease;
+    height: 600px;
+  }
+}
+
+// Animation methodWrapper
+.methodWrapper.reveal {
+  position: relative;
+  justify-content: end;
+  transition: 1s all ease;
+  display: flex;
+  align-items: center;
+  div:nth-child(1) {
+    text-align: right;
+  }
+  div:nth-child(1) img {
+    transition: 1s all ease;
+    width: 65%;
+  }
+}
+.methodWrapper.reveal.active {
+  transition: 1s all ease;
+
+  div:nth-child(1) img {
+    transition: 1s all ease;
+    width: 100%;
+  }
+}

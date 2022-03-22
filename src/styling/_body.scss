@@ -1,0 +1,43 @@
+@media screen and (max-width: 760px) {
+  .flex-grid {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+}
+
+.flex-grid {
+  display: grid;
+  order: 5;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 5% 0 5%;
+  padding: 0px;
+  // gap: 1%;
+}
+.list-button {
+  display: flex;
+  justify-content: center;
+
+  button {
+    @include buttonStyle();
+    margin: 5% 2% 0% 2%;
+  }
+  button:nth-child(1) {
+    background-color: lightgray;
+  }
+}
+
+.col {
+  flex: 1;
+}
+
+.list {
+  display: grid;
+  border-radius: 5%;
+  height: 100%;
+  background-color: $c2;
+  justify-items: center;
+
+  div {
+    flex: 1;
+  }
+}

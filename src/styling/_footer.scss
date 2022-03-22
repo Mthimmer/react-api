@@ -1,0 +1,38 @@
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  clear: both;
+  h2 {
+    color: $primary;
+  }
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 25%;
+      display: flex;
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        padding: 0px 20px 0px 20px;
+      }
+    }
+    h4 {
+      color: $primary;
+      font-weight: 100;
+    }
+    @media screen and (max-width: 760px) {
+      .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
